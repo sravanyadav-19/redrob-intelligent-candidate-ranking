@@ -1,0 +1,20 @@
+# Normalize line endings for the whole team
+# Windows users get CRLF locally, but Git stores LF
+* text=auto
+
+# Force LF for Python and markdown files always
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Binary files — don't touch line endings
+*.png binary
+*.jpg binary
+*.pdf binary
+*.pkl binary
+*.pt binary
+*.bin binary
