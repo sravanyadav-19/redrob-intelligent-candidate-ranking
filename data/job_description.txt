@@ -1,0 +1,7 @@
+# Job Description — Senior AI Engineer (Founding Team)
+# Company: Redrob AI
+# Role: Senior AI Engineer
+# Experience: 5-9 years
+
+# Sravan: paste the clean JD text here before Ganesh starts embedding
+# This file is the single source of truth for the JD text used in all embeddings

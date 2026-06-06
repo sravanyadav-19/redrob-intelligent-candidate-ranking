@@ -1,0 +1,3 @@
+# This file exists so Git tracks the data/ folder
+# Do NOT commit candidates.jsonl or any raw data files here
+# Place candidates.jsonl inside data/raw/ locally — it is gitignored
