@@ -1,0 +1,97 @@
+# Redrob Hackathon — Submission Metadata
+# Team: just_started
+
+# ============================================================================
+# Team identity
+# ============================================================================
+
+team_name: "just_started"
+
+primary_contact:
+  name: "Sravan"
+  email: "sravanyadav19@gmail.com"        
+  phone: "+91-9705594777"         
+
+team_members:
+  - name: "Sravan"
+    email: "sravanyadav19@gmail.com"    
+    role: "Team Lead — Scoring Engine & Pipeline"
+    github: "https://github.com/sravanyadav-19"
+
+  - name: "Ganesh"
+    email: ""
+    role: "Semantic Embeddings"
+    github: "https://github.com/GorantlaGanesh"
+
+  - name: "Rajesh"
+    email: "grukul.224@gmail.com"
+    role: "Feature Extraction & Data Engineering"
+    github: "https://github.com/rayesh8468"
+
+  - name: "Sahitya"
+    email: "saisahitya1911@gmail.com"
+    role: "Behavioral Signals & Reasoning & Slides"
+    github: "https://github.com/saisahitya-19"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+
+github_repo: "https://github.com/sravanyadav-19/redrob-intelligent-candidate-ranking"
+
+sandbox_link: ""    # fill after setting up Google Colab
+
+reproduce_command: "python rank.py --candidates ./data/raw/candidates.jsonl --out ./output/just_started.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+
+compute:
+  platform: "Windows 11 Local Machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.9"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+
+ai_tools_used:
+  - "Claude"
+
+ai_usage_summary: |
+  Used Claude for architectural discussion, code review, and debugging.
+  All candidate data was processed locally. No candidate data was fed
+  to any external LLM or API. The ranking system runs fully offline
+  with no network calls during inference.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+
+methodology_summary: |
+  Multi-signal linear ranker combining TF-IDF semantic similarity with
+  rule-based career signal extraction. Six weighted signals: semantic job
+  match (35%), systems built score (25%), production ML score (15%),
+  product company boost (10%), behavioral signals (10%), experience depth
+  (5%). Hard caps applied for honeypots, domain mismatches, and
+  location-ineligible candidates. Behavioral scoring uses Redrob recency,
+  response rate, open-to-work flag, and notice period. Full pipeline runs
+  in 35 seconds on CPU for 100K candidates with no network calls.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
