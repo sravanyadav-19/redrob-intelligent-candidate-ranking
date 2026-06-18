@@ -15,7 +15,9 @@ import argparse
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+# Add src/ to path so all modules can find each other
+SRC_DIR = Path(__file__).parent / "src"
+sys.path.insert(0, str(SRC_DIR))
 
 from pipeline import run_pipeline
 

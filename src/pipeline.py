@@ -14,10 +14,10 @@ import csv
 from pathlib import Path
 
 import os, sys
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from parser import parse_candidate
-from embedder import compute_semantic_scores, JD_TEXT
+from embedder import JD_TEXT
 from feature_extractor import extract_features
 from behavioral_signals import compute_behavior_score
 from scorer import rank_candidates
