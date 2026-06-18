@@ -19,7 +19,7 @@ team_members:
     github: "https://github.com/sravanyadav-19"
 
   - name: "Ganesh"
-    email: ""
+    email: "gorantlaganesh18@gmail.com"
     role: "Semantic Embeddings"
     github: "https://github.com/GorantlaGanesh"
 
@@ -39,7 +39,7 @@ team_members:
 
 github_repo: "https://github.com/sravanyadav-19/redrob-intelligent-candidate-ranking"
 
-sandbox_link: ""    # fill after setting up Google Colab
+sandbox_link: "https://colab.research.google.com/drive/1Sf0rO2jtQwWKX1Mk8sDZzl-Hq6gI7SNH?usp=sharing"    
 
 reproduce_command: "python rank.py --candidates ./data/raw/candidates.jsonl --out ./output/just_started.csv"
 
